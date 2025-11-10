@@ -10,6 +10,6 @@ for char in text:
     elif char.islower():
         cipher += chr((ord(char) + shift - 97) % 26 + 97)
     else:
-        cipher += char  # keep spaces and symbols unchanged
-
+        cipher += char
 print("Encrypted text:", cipher)
+
