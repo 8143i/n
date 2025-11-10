@@ -1,5 +1,3 @@
-# Caesar Cipher Encryption
-
 text = input("Enter text to encrypt: ")
 shift = int(input("Enter shift value: "))
 cipher = ""
@@ -12,4 +10,5 @@ for char in text:
     else:
         cipher += char
 print("Encrypted text:", cipher)
+
 
