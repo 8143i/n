@@ -1,5 +1,3 @@
-# Caesar Cipher Decryption
-
 cipher_text = input("Enter text to decrypt: ")
 shift = int(input("Enter shift value: "))
 original = ""
@@ -10,6 +8,7 @@ for char in cipher_text:
     elif char.islower():
         original += chr((ord(char) - shift - 97) % 26 + 97)
     else:
-        original += char  # keep spaces and symbols unchanged
+        original += char 
 
 print("Decrypted text:", original)
+
